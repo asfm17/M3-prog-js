@@ -1,6 +1,6 @@
 <?php
 
-  echo "dit is goed toch?"
-  echo "hoop ik?"
+  echo "dit is goed toch?";
+  echo "hoop ik?";
 
 ?>
