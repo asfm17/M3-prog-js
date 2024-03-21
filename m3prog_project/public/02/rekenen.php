@@ -1,4 +1,5 @@
 <?php
+
    $getal = 16.75938;
    $afgerond = ceil($getal);
    echo "Als je ${getal} afrond dan krijg je: ${afgerond}";
