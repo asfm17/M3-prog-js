@@ -1,19 +1,28 @@
-<?php
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <?php
+      $data = array();
+      $namen = ["Superman", "Darth Vader", "Joker", "Saitama", "Light Yagami", "Gol D. Roger"];
+      $namen[6] = "Eminem";
 
-$data = array();
-$autos  = ["Bugatti Chiron", "Dodge Demon", "Nissan Supra"];
+      echo count($namen);
+      sort($namen);
+      print_r($data);
+      array_pop($namen);
+      array_push($namen,"Ik");
+      print_r($namen);
+      
+      $namen_tekst= implode("<br>",$namen);
+      echo $namen_tekst;
+      explode("",$namen_tekst);
+      print_r($namen_tekst)
 
-print_r($autos);
-echo  $autos [0]. "<br>";
-echo $autos  [2] ."<br>";  
-var_dump($data);
-print_r($data);
-
-$autos[] = "Dodge 1969";
-echo count($autos);
-
-print_r($autos);
-sort($autos);
-echo implode(' >> ', $autos);
-
-?>
+    ?>
+</body>
+</html>
